@@ -42,51 +42,16 @@ header {
     }
 
     .portfolio-image-focused { display: none; }
-    .portfolio-image-normal { display: block; }
+    .portfolio-image-normal { display: block; }    
   }
 
-  &:hover {
-    background: $color_fg;
-    transform: scale(1.02);
-
-    .portfolio-description {
-      color: $color_bg;
-    }
-
-    .portfolio-image-focused { display: block; }
-    .portfolio-image-normal { display: none; }
+  .portfolio-description {
+    height: 100%;
+    padding-left: $gutter;
   }
 
-  &:nth-of-type(even) {
-    .portfolio-description { padding-left: $gutter; }
+  .portfolio-description:hover {
+    color: white;
+    background-color: black;
   }
-}
-
-.additional-portfolio-entries {
-  .row {
-    margin-top: calc(#{$gutter * 2});
-  }
-
-  .additional-portfolio-item {
-    height: calc(#{$colwidth} * 4);
-    transition: transform 0.5s ease-out;
-    overflow: hidden;
-
-    &:hover {
-      transform: scale(1.02);
-
-      .portfolio-image-focused { display: block; }
-      .portfolio-image-normal { display: none; }
-    }
-  }
-
-  img {
-    object-fit: fill;
-    object-position: right bottom;
-    display: inline-block;
-    width: auto;
-  }
-
-  .portfolio-image-focused { display: none; }
-  .portfolio-image-normal { display: block; }
 }
