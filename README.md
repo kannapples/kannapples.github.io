@@ -1,2 +1,1 @@
-# kannapples.github.io
-Artistic Portfolio for Claire Kannapell
+my personal website. cool.

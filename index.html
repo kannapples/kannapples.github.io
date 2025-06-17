@@ -1,0 +1,90 @@
+---
+layout: base
+title: Claire Kannapell portfolio
+---
+
+<div class="container">
+  
+
+  {% include nav.html page="portfolio" %}
+
+  <header>
+    <div class="row">
+      <h1 class="cols-2">Claire</h1>
+      <h1 class="cols-2">Kannapell</h1>
+    </div>
+    <div class="row">
+      <p class="cols-9 introduction">
+        Hi, I'm <strong>Claire</strong>, a video producer, director, and editor in Madison, WI. I am passionate about helping musicians and artists share their work through video. Here are some of my recent projects.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="row">
+      <h2>My Work</h2>
+    </div>
+
+    <article class="portfolio-entry">
+      <a href="/portfolio/acoustic_moose_novel_folly/">
+        <div class="row">
+          <div class="cols-4 portfolio-description">
+            <h3>[Directing] Novel Folly on Acoustic Moose</h3>
+            <p>Live Directing 2 manned cameras and 3 stationary cameras via headset and VMix </p>
+          </div>
+          <div class="cols-8 portfolio-image">
+            <img class="portfolio-image-normal" src="assets/panko_boxes_animated.gif" alt="Panko Box designs">
+            <img class="portfolio-image-focused" src="assets/panko_boxes_thumbnail.png" alt="Panko Box designs">
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="portfolio-entry">
+      <a href="/portfolio/ftfr_shitty_barn/">
+        <div class="row">
+          <div class="cols-4 portfolio-description">
+            <h3>[Producing, Editing] From The Front Row at The Shitty Barn</h3>
+            <p>Co-producing a filmed live concert at The Shitty Barn in Spring Green, WI. Edited down to a 30-minute episode, following public broadcasting specifications.</p>
+          </div>
+          <div class="cols-8 portfolio-image">
+            <img class="portfolio-image-normal" src="assets/gottfried_thumbnail_greyscale.jpg" alt="Gottfried Prairie rebranding">
+            <img class="portfolio-image-focused" src="assets/gottfried_thumbnail_color.jpg" alt="Gottfried Prairie rebranding">
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="portfolio-entry">
+      <a href="/portfolio/ftfr_shitty_barn/">
+        <div class="row">
+          <div class="cols-4 portfolio-description">
+            <h3>[Producing, Editing] From The Front Row at The Bur Oak</h3>
+            <p>Co-producing a filmed live concert at The Bur Oak in Madison, WI. Edited down to a 30-minute episode, following public broadcasting specifications.</p>
+          </div>
+          <div class="cols-8 portfolio-image">
+            <img class="portfolio-image-normal" src="assets/gottfried_thumbnail_greyscale.jpg" alt="Gottfried Prairie rebranding">
+            <img class="portfolio-image-focused" src="assets/gottfried_thumbnail_color.jpg" alt="Gottfried Prairie rebranding">
+          </div>
+        </div>
+      </a>
+    </article>
+  </main>
+</div>
+
+{% include footer.html %}
+
+
+<script>
+  let big_logo = document.querySelector('.big-logo')
+  let small_logo = document.querySelector('.navbar-logo')
+  document.addEventListener('scroll', function() {
+    if (big_logo.getBoundingClientRect().bottom < 0) {
+      small_logo.classList.remove('hide')
+      big_logo.classList.add('hide')
+    } else {
+      small_logo.classList.add('hide')
+      big_logo.classList.remove('hide')
+    }
+  })
+</script>

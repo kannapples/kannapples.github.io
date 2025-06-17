@@ -1,0 +1,31 @@
+<nav>
+  <div class="row">
+    <menu class="cols-4">
+      <li>
+        <a href="/"
+           class="{% if include.page == "portfolio" or include.page == "portfolio_item" %}active{% endif %}">
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="/about"
+           class="{% if include.page == "about" %}active{% endif %}">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="/contact"
+           class="{% if include.page == "contact" %}active{% endif %}">
+          Contact
+        </a>
+      </li>
+    </menu>
+  </div>
+</nav>
+
+{% if include.page != "portfolio" %}
+<script>
+  let small_logo = document.querySelector('.navbar-logo')
+  small_logo.classList.remove('hide')
+</script>
+{% endif %}
