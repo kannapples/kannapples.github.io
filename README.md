@@ -1,1 +1,1 @@
-my personal website. cool.
+To compile server: `bundle exec jekyll serve`
