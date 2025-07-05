@@ -3,7 +3,9 @@
 nav {
   position: sticky;
   z-index: 100;
-  top: 1rem;
+  top: 0rem;
+  height: 3rem;
+  background-color: white;
 
   a {
     text-decoration: none;
@@ -15,6 +17,7 @@ nav {
 
   .row {
     align-items: center;
+    height: 100%;
   }
 
   ul, menu {

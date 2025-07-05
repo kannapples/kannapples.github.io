@@ -14,4 +14,18 @@ footer {
   li {
     padding-bottom: 0.2rem;
   }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: $gutter;
+  align-items: flex-start;
 }
